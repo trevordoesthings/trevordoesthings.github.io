@@ -1,0 +1,101 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to left top, lightgray, cyan);
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome, .baking, .photography, .intro, .funstuff, .boardgames {
+    position:relative;
+    height: 100vh;
+    margin:10px;
+}
+
+section h1 {
+    font-size: 125px;
+    position:absolute;
+    text-align: right;
+    bottom: 5%;
+    right: 5%;
+    color: white;
+    margin: 0;
+    text-shadow: 3px 3px black;
+}
+
+.welcome .parallax {
+    background-image: url('images/welcome.JPG');
+}
+
+.baking .parallax {
+    background-image: url('images/monkeyBread.png');
+}
+
+.photography .parallax {
+    background-image: url('images/welcome.JPG');
+}
+
+.intro .parallax {
+    background-image: url('images/intro.png')
+}
+
+.funstuff .parallax {
+    background-image: url('images/boardGames.png')
+}
+
+nav{
+    background-color: gray;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 40px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+section h2 {
+    background-color: grey;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 10% 5%;
+    z-index: 5;
+    width: 25%
+}
+
+button {
+    position: absolute;
+}
